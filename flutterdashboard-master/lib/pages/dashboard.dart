@@ -3,15 +3,19 @@ import 'package:route_planner/theme.dart';
 import 'package:route_planner/widgets/sidebar.dart';
 import 'package:route_planner/widgets/bottom_navigation.dart';
 import 'package:flutter/material.dart';
+import 'package:route_planner/pages/chat.dart';
+import 'package:route_planner/pages/map.dart';
+import 'package:route_planner/pages/profile.dart';
 
-class Welcome extends StatefulWidget {
-  const Welcome({Key? key}) : super(key: key);
+
+class Dashboard extends StatefulWidget {
+  const Dashboard({Key? key}) : super(key: key);
 
   @override
-  _WelcomeState createState() => _WelcomeState();
+  _DashboardState createState() => _DashboardState();
 }
 
-class _WelcomeState extends State<Welcome> {
+class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,13 +36,14 @@ class _WelcomeState extends State<Welcome> {
     ),
         ],
       ),
-      body:SingleChildScrollView(
-       child: Column(
-         children: <Widget> [
-           BottomNavBarFb2(),
-         ],
-       ),
-      ),
+      // body:SingleChildScrollView(
+      //  child: Column(
+      //    children: <Widget> [
+      //      BottomNavBarFb2(),
+      //    ],
+      //  ),
+      // ),
     );
   }
 }
+ 

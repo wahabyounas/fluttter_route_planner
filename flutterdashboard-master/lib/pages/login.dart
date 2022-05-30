@@ -4,9 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:route_planner/api/api_service.dart';
 import 'package:route_planner/model/login_model.dart';
 import 'package:route_planner/pages/ProgressHUD.dart';
+import 'package:route_planner/pages/home.dart';
 import 'package:route_planner/pages/reset_password.dart';
 import 'package:route_planner/pages/signup.dart';
-import 'package:route_planner/pages/welcome.dart';
+import 'package:route_planner/pages/dashboard.dart';
 import 'package:route_planner/theme.dart';
 import 'package:route_planner/widgets/login_form.dart';
 import 'package:route_planner/widgets/bottom_navigation.dart';
@@ -235,7 +236,7 @@ class _LogInScreenState extends State<LogInScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => Welcome()),
+                                  builder: (context) => MyHome()),
                             );
                           }
                         }

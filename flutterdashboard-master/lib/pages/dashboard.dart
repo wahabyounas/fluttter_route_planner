@@ -7,7 +7,6 @@ import 'package:route_planner/pages/chat.dart';
 import 'package:route_planner/pages/map.dart';
 import 'package:route_planner/pages/profile.dart';
 
-
 class Dashboard extends StatefulWidget {
   const Dashboard({Key? key}) : super(key: key);
 
@@ -19,21 +18,19 @@ class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       drawer: SideBar(),
+      drawer: SideBar(),
       appBar: AppBar(
         title: Text("Route Planner"),
         centerTitle: true,
         backgroundColor: kPrimaryColor,
         actions: <Widget>[
-    Padding(
-      padding: EdgeInsets.only(right: 15.0),
-      child: GestureDetector(
-        onTap: () {},
-        child: Icon(
-            Icons.more_vert
-        ),
-      )
-    ),
+          PopupMenuButton(
+            itemBuilder: ((context) => [
+                  PopupMenuItem(
+                    child: Text('Logout'),
+                  )
+                ]),
+          )
         ],
       ),
       // body:SingleChildScrollView(
@@ -46,4 +43,3 @@ class _DashboardState extends State<Dashboard> {
     );
   }
 }
- 

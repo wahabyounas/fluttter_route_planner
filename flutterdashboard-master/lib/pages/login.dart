@@ -55,22 +55,22 @@ class _LogInScreenState extends State<LogInScreen> {
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget> [
+            children: <Widget>[
               SizedBox(
                 height: 100,
               ),
               Center(
-                 child: Container(
-                          child: new Image.asset(
-                            'assets/uog.png',
-                            height: 70.0,
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-               ),
-               SizedBox(
-                 height: 70,
-               ),
+                child: Container(
+                  child: new Image.asset(
+                    'assets/uog.png',
+                    height: 70.0,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 70,
+              ),
               Text(
                 'Welcome Back',
                 style: titleText,
@@ -235,8 +235,7 @@ class _LogInScreenState extends State<LogInScreen> {
                           } else if (value.token != null) {
                             Navigator.push(
                               context,
-                              MaterialPageRoute(
-                                  builder: (context) => MyHome()),
+                              MaterialPageRoute(builder: (context) => MyHome()),
                             );
                           }
                         }
@@ -264,7 +263,7 @@ class _LogInScreenState extends State<LogInScreen> {
               //           ),
               //  ),
               //  LoginOption(),
-             // BottomNav(),
+              // BottomNav(),
             ],
           ),
         ),

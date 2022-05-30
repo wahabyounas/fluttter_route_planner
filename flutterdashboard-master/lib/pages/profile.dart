@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class Profile extends StatefulWidget {
   const Profile({Key? key}) : super(key: key);
 
@@ -11,8 +12,11 @@ class _ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Profile')),
-     body:Center(child: Text('Profile Screen', style: TextStyle(fontSize: 30,))
-     ),
+      body: Center(
+          child: Text('Profile Screen',
+              style: TextStyle(
+                fontSize: 30,
+              ))),
     );
   }
 }

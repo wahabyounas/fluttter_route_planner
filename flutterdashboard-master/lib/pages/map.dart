@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class MyMap extends StatefulWidget {
   const MyMap({Key? key}) : super(key: key);
 
@@ -12,7 +13,10 @@ class _MyMapState extends State<MyMap> {
     return Scaffold(
       appBar: AppBar(title: Text('Map')),
       body: Center(
-        child: Text('Maps Screen', style: TextStyle(fontSize: 40,)),
+        child: Text('Maps Screen',
+            style: TextStyle(
+              fontSize: 40,
+            )),
       ),
     );
   }
